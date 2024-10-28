@@ -1,0 +1,50 @@
+h1{
+    color: rgb(126, 5, 5);
+    font-size: 36px;
+    text-align: center;
+}
+
+h2{
+    color: brown;
+    /* background-color: rgba(245, 187, 187, 0.432); */
+    /* background: linear-gradient(to right, rgb(255, 216, 216), rgb(250, 248, 247)); */
+    padding: 10px;
+    text-decoration: underline;
+    border: 1px solid chocolate;
+    transition: 0.4s;
+    background: linear-gradient(270deg, #ffffff, #feb47b, #ff7e5f);
+    background-size: 600% 600%;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+
+/* Define the keyframe animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h2:hover{
+    filter: brightness(0.5);
+}
+
+p{
+    color: rgb(138, 76, 19);
+}
+
+ul{
+    color: rgb(107, 68, 20);
+    list-style: circle;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
