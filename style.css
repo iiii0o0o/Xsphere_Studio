@@ -1,7 +1,14 @@
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     color: rgb(126, 5, 5);
     font-size: 36px;
-    text-align: center;
+    text-align: left;
+    margin-left: 5%;
 }
 
 h2{
@@ -12,9 +19,23 @@ h2{
     text-decoration: underline;
     border: 1px solid chocolate;
     transition: 0.4s;
-    background: linear-gradient(270deg, #ffffff, #feb47b, #ff7e5f);
+    background: linear-gradient(270deg, #ffffff, #faf7f5, #ffd9cf);
     background-size: 600% 600%;
     animation: gradientAnimation 3s ease infinite;
+}
+
+h2:hover{
+    filter: brightness(0.5);
+}
+
+
+p{
+    color: rgb(138, 76, 19);
+}
+
+ul{
+    color: rgb(107, 68, 20);
+    list-style: circle;
 }
 
 
@@ -31,20 +52,29 @@ h2{
     }
 }
 
-h2:hover{
-    filter: brightness(0.5);
+.demo{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
-p{
-    color: rgb(138, 76, 19);
+.demo article{
+
+    width: 40%;
+    margin-left: 2%;
+
+
 }
 
-ul{
-    color: rgb(107, 68, 20);
-    list-style: circle;
+img{
+    width: 100%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+@media screen and (width > 1024px) {
+    .demo article{
+        width: 20%;
+        margin-left: 2%;
+    }
 }
