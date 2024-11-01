@@ -1,6 +1,6 @@
 body{
     scroll-behavior: smooth;
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
@@ -77,4 +77,31 @@ img{
         width: 20%;
         margin-left: 2%;
     }
+}
+
+gmp-map {
+    height: 400px;
+  }
+
+nav{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 20px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 5px;
+    
+}
+
+
+
+.breakdown + nav{
+    height: 127px;
+    padding: 10px;
+
+}
+
+#menuIcon{
+    width: 40px;
 }

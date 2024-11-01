@@ -6,15 +6,17 @@
     <title>Xspehere Studio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/Portfolio/img/logo.jpg">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASWgKfC1n99O84zRv9p5qCsNr8Cr64Hn4&callback=console.debug&libraries=maps,marker&v=beta"></script>
 </head>
 <body>
 
     <header>
+        <img onclick="toggleMenu()" id="menuIcon" src="/Portfolio/img/menu_icon.png">
         <nav>
-            <a href="#Our Work">Our Work</a>
-            <a href="#Services">Services</a>
-            <a href="#Location">Location</a>
-            <a href="#Contact Us">Contact Us</a>
+            <a class="navigation" href="#Our Work">Our Work</a>
+            <a class="navigation" href="#Services">Services</a>
+            <a class="navigation" href="#Location">Location</a>
+            <a class="navigation" href="#Contact Us">Contact Us</a>
         </nav>
     </header>
     <h1>The photography and videography studio in Toronto</h1>
@@ -69,7 +71,11 @@
         <ul>
             <li>Unity Interactive AR Game</li>
         </ul>
+        <!-- <gmp-map center="40.12150192260742,-100.45039367675781" zoom="4" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="40.12150192260742,-100.45039367675781" title="My location"></gmp-advanced-marker>
+          </gmp-map> -->
     </section>
 
 </body>
+<script src="srcipt.js"></script>
 </html>
