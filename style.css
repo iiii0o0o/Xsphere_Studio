@@ -4,22 +4,38 @@ body{
     padding: 0;
 }
 
-h1{
-    color: rgb(126, 5, 5);
-    font-size: 36px;
+header{
+    font-style:italic;
+    float: right;
+    background-color: aqua;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 50px;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.title--second{
+    margin-top: 0;
+    margin-left: 25%;
+    font-size: 30px;
 }
 
 h2{
-    color: brown;
+    color: rgb(0, 0, 0);
     /* background-color: rgba(245, 187, 187, 0.432); */
     /* background: linear-gradient(to right, rgb(255, 216, 216), rgb(250, 248, 247)); */
-    padding: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
     text-decoration: underline;
-    border: 1px solid chocolate;
     transition: 0.4s;
-    background: linear-gradient(270deg, #ffffff, #faf7f5, #ffd9cf);
     background-size: 600% 600%;
     animation: gradientAnimation 3s ease infinite;
 }
@@ -30,7 +46,7 @@ h2:hover{
 
 
 p{
-    color: rgb(138, 76, 19);
+    color: rgb(54, 54, 54);
 }
 
 ul{
@@ -38,21 +54,7 @@ ul{
     list-style: circle;
 }
 
-
-/* Define the keyframe animation */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.demo{
+.projects{
 
     display: flex;
     justify-content: center;
@@ -60,7 +62,7 @@ ul{
 
 }
 
-.demo article{
+.projects article{
 
     width: 40%;
     margin-left: 2%;
@@ -68,12 +70,13 @@ ul{
 
 }
 
-img{
+.projects__demo__image{
+
     width: 100%;
 }
 
 @media screen and (width > 1024px) {
-    .demo article{
+    .projects__demo article{
         width: 20%;
         margin-left: 2%;
     }
@@ -89,12 +92,9 @@ nav{
     transition: 0.3s;
     font-size: 20px;
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 5px;
     
 }
-
-
 
 .breakdown + nav{
     height: 127px;
