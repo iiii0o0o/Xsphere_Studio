@@ -1,5 +1,5 @@
-function toggleMenu() {
-    const element = document.getElementById("menuIcon");
-    element.classList.toggle("breakdown");
+function toggleMenuIcon() {
+    const element = document.getElementById("header");
+    element.classList.toggle("active");
 }
 

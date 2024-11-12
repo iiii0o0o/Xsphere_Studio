@@ -10,8 +10,11 @@
 </head>
 <body>
 
-    <header>
-        <img onclick="toggleMenu()" id="menuIcon" src="/img/menu_icon.png">
+    <header id="header">
+        <div id="menuIcon" class="menuIcon" onclick="toggleMenuIcon()">
+            <div class="bar bar__top"></div>
+            <div class="bar bar__bottom"></div>
+        </div>
         <nav>
             <a class="navigation" href="#Our Work">Our Work</a>
             <a class="navigation" href="#Services">Services</a>
@@ -53,25 +56,24 @@
         <section id="Services">
             <h2>Services</h2>
             <ul>
-                <li>George Brown College</li>
+                <li>Photography</li>
+                <li>Videography</li>
+                <li>Post-Production</li>
+                <li>Branding</li>
             </ul>
             <picture></picture>
     
         </section>
     
-        <section id="Location">
-            <h2>Location</h2>
-            <ul>
-                <li>ESL Tutor  --  Shenyag Shifan University</li>
-                <li>Fleet Coordinator  --  Steer Technology Inc</li>
-                <li>Sales Consultant  --  Coredata Informatics Ltd</li>
-            </ul>
+        <section id="Blog">
+            <h2>Blog</h2>
         </section>
         
         <section id="Contact Us">
-            <h2>Contact Us</h2>
+            <h2>Contact</h2>
             <ul>
-                <li>Unity Interactive AR Game</li>
+                <li>Location: </li>
+                <li>Phone: </li>
             </ul>
             <!-- <gmp-map center="40.12150192260742,-100.45039367675781" zoom="4" map-id="DEMO_MAP_ID">
                 <gmp-advanced-marker position="40.12150192260742,-100.45039367675781" title="My location"></gmp-advanced-marker>

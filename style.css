@@ -1,17 +1,31 @@
 body{
     scroll-behavior: smooth;
     padding: 0;
+    margin:10px;
     background-image: url(/img/white_bg.jpg);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 header{
     font-style:italic;
     float: right;
-    background-color: aqua;
+    background-color: rgba(255, 255, 240, 0);
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+main{
+    
 }
 
 footer{
@@ -21,20 +35,22 @@ footer{
 
 .title{
     font-size: 50px;
-    text-align: left;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    position: relative;
+    top: 50px;
+    left: 50px;
 }
 
 .title--second{
-    margin-top: 0;
-    margin-left: 25%;
     font-size: 30px;
+}
+
+h1{
+    margin: 0;
 }
 
 h2{
     color: rgb(0, 0, 0);
-    /* background-color: rgba(245, 187, 187, 0.432); */
+    /* background-color: rgba(255, 187, 187, 0.432); */
     /* background: linear-gradient(to right, rgb(255, 216, 216), rgb(250, 248, 247)); */
     margin-left: 10px;
     margin-top: 50px;
@@ -91,21 +107,69 @@ gmp-map {
   }
 
 nav{
-    height: 0;
-    overflow: hidden;
-    transition: 0.3s;
+    transition: 0.5s;
     font-size: 20px;
-    display: grid;
+    display: flex;
     gap: 5px;
-    
+    position: absolute;
+    right: 88px;
+    top: -107px;
 }
 
-.breakdown + nav{
-    height: 127px;
-    padding: 10px;
-
+.menuIcon{
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
-#menuIcon{
-    width: 40px;
+.bar{
+    background-color: black;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.bar__top{
+    top: 0;
+}
+
+.bar__bottom{
+    top: 15px;
+}
+
+
+.active nav{
+    height: 80vh;
+    position: relative;
+    left: 0;
+    top: 200px;
+    flex-direction: column;
+    gap: 80px;
+    background-color: rgb(255, 255, 248);
+}
+
+.active .navigation{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(78, 91, 92);
+    text-decoration: none;
+}
+
+.active .bar__top{
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.active .bar__bottom{
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+.active#header{
+    height: 100%;
+    background-color: rgba(255, 255, 248, 1);
 }
